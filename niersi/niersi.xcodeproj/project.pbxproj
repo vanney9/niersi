@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7A3D1101E5B0C2100EFD6BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3D10F1E5B0C2100EFD6BC /* main.m */; };
+		D7A3D1131E5B0C2100EFD6BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3D1121E5B0C2100EFD6BC /* AppDelegate.m */; };
+		D7A3D1161E5B0C2100EFD6BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3D1151E5B0C2100EFD6BC /* ViewController.m */; };
+		D7A3D1191E5B0C2200EFD6BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A3D1171E5B0C2200EFD6BC /* Main.storyboard */; };
+		D7A3D11B1E5B0C2200EFD6BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7A3D11A1E5B0C2200EFD6BC /* Assets.xcassets */; };
+		D7A3D11E1E5B0C2200EFD6BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A3D11C1E5B0C2200EFD6BC /* LaunchScreen.storyboard */; };
+		EDEE9A27569E0A4CA6E5C484 /* libPods-niersi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F3A3F36A83134F53DBB3F9 /* libPods-niersi.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		48F3A3F36A83134F53DBB3F9 /* libPods-niersi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-niersi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AF2E19BBCD2EDF72CD012E3 /* Pods-niersi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-niersi.release.xcconfig"; path = "Pods/Target Support Files/Pods-niersi/Pods-niersi.release.xcconfig"; sourceTree = "<group>"; };
+		B261D9D9EAFFE71E56F51366 /* Pods-niersi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-niersi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-niersi/Pods-niersi.debug.xcconfig"; sourceTree = "<group>"; };
+		D7A3D10B1E5B0C2100EFD6BC /* niersi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = niersi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7A3D10F1E5B0C2100EFD6BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D7A3D1111E5B0C2100EFD6BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D7A3D1121E5B0C2100EFD6BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D7A3D1141E5B0C2100EFD6BC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D7A3D1151E5B0C2100EFD6BC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D7A3D1181E5B0C2200EFD6BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7A3D11A1E5B0C2200EFD6BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7A3D11D1E5B0C2200EFD6BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D7A3D11F1E5B0C2200EFD6BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7A3D1081E5B0C2100EFD6BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDEE9A27569E0A4CA6E5C484 /* libPods-niersi.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE620845338E41F959786AF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B261D9D9EAFFE71E56F51366 /* Pods-niersi.debug.xcconfig */,
+				9AF2E19BBCD2EDF72CD012E3 /* Pods-niersi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D6B4E562E0162ADA62C210F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48F3A3F36A83134F53DBB3F9 /* libPods-niersi.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7A3D1021E5B0C2100EFD6BC = {
+			isa = PBXGroup;
+			children = (
+				D7A3D10D1E5B0C2100EFD6BC /* niersi */,
+				D7A3D10C1E5B0C2100EFD6BC /* Products */,
+				CE620845338E41F959786AF6 /* Pods */,
+				D6B4E562E0162ADA62C210F5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D7A3D10C1E5B0C2100EFD6BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7A3D10B1E5B0C2100EFD6BC /* niersi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7A3D10D1E5B0C2100EFD6BC /* niersi */ = {
+			isa = PBXGroup;
+			children = (
+				D7A3D1111E5B0C2100EFD6BC /* AppDelegate.h */,
+				D7A3D1121E5B0C2100EFD6BC /* AppDelegate.m */,
+				D7A3D1141E5B0C2100EFD6BC /* ViewController.h */,
+				D7A3D1151E5B0C2100EFD6BC /* ViewController.m */,
+				D7A3D1171E5B0C2200EFD6BC /* Main.storyboard */,
+				D7A3D11A1E5B0C2200EFD6BC /* Assets.xcassets */,
+				D7A3D11C1E5B0C2200EFD6BC /* LaunchScreen.storyboard */,
+				D7A3D11F1E5B0C2200EFD6BC /* Info.plist */,
+				D7A3D10E1E5B0C2100EFD6BC /* Supporting Files */,
+			);
+			path = niersi;
+			sourceTree = "<group>";
+		};
+		D7A3D10E1E5B0C2100EFD6BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7A3D10F1E5B0C2100EFD6BC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7A3D10A1E5B0C2100EFD6BC /* niersi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7A3D1221E5B0C2200EFD6BC /* Build configuration list for PBXNativeTarget "niersi" */;
+			buildPhases = (
+				7A588AA7BCB7C8BDD74F83BA /* [CP] Check Pods Manifest.lock */,
+				D7A3D1071E5B0C2100EFD6BC /* Sources */,
+				D7A3D1081E5B0C2100EFD6BC /* Frameworks */,
+				D7A3D1091E5B0C2100EFD6BC /* Resources */,
+				71DEC599F36BF52AE6B65BB2 /* [CP] Embed Pods Frameworks */,
+				425FE57478D1C92DE82BA25D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = niersi;
+			productName = niersi;
+			productReference = D7A3D10B1E5B0C2100EFD6BC /* niersi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7A3D1031E5B0C2100EFD6BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = vanney9;
+				TargetAttributes = {
+					D7A3D10A1E5B0C2100EFD6BC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 89YB4U57SU;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D7A3D1061E5B0C2100EFD6BC /* Build configuration list for PBXProject "niersi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7A3D1021E5B0C2100EFD6BC;
+			productRefGroup = D7A3D10C1E5B0C2100EFD6BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7A3D10A1E5B0C2100EFD6BC /* niersi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7A3D1091E5B0C2100EFD6BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7A3D11E1E5B0C2200EFD6BC /* LaunchScreen.storyboard in Resources */,
+				D7A3D11B1E5B0C2200EFD6BC /* Assets.xcassets in Resources */,
+				D7A3D1191E5B0C2200EFD6BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		425FE57478D1C92DE82BA25D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-niersi/Pods-niersi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71DEC599F36BF52AE6B65BB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-niersi/Pods-niersi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A588AA7BCB7C8BDD74F83BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7A3D1071E5B0C2100EFD6BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7A3D1161E5B0C2100EFD6BC /* ViewController.m in Sources */,
+				D7A3D1131E5B0C2100EFD6BC /* AppDelegate.m in Sources */,
+				D7A3D1101E5B0C2100EFD6BC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D7A3D1171E5B0C2200EFD6BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7A3D1181E5B0C2200EFD6BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D7A3D11C1E5B0C2200EFD6BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7A3D11D1E5B0C2200EFD6BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7A3D1201E5B0C2200EFD6BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		D7A3D1211E5B0C2200EFD6BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7A3D1231E5B0C2200EFD6BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B261D9D9EAFFE71E56F51366 /* Pods-niersi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 89YB4U57SU;
+				INFOPLIST_FILE = niersi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vanney9.niersi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7A3D1241E5B0C2200EFD6BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AF2E19BBCD2EDF72CD012E3 /* Pods-niersi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 89YB4U57SU;
+				INFOPLIST_FILE = niersi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vanney9.niersi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7A3D1061E5B0C2100EFD6BC /* Build configuration list for PBXProject "niersi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7A3D1201E5B0C2200EFD6BC /* Debug */,
+				D7A3D1211E5B0C2200EFD6BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7A3D1221E5B0C2200EFD6BC /* Build configuration list for PBXNativeTarget "niersi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7A3D1231E5B0C2200EFD6BC /* Debug */,
+				D7A3D1241E5B0C2200EFD6BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7A3D1031E5B0C2100EFD6BC /* Project object */;
+}
