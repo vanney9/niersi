@@ -13,6 +13,11 @@
 		D7A3D1191E5B0C2200EFD6BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A3D1171E5B0C2200EFD6BC /* Main.storyboard */; };
 		D7A3D11B1E5B0C2200EFD6BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7A3D11A1E5B0C2200EFD6BC /* Assets.xcassets */; };
 		D7A3D11E1E5B0C2200EFD6BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A3D11C1E5B0C2200EFD6BC /* LaunchScreen.storyboard */; };
+		D7A3D1431E5F007300EFD6BC /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3D1421E5F007300EFD6BC /* HomeViewController.m */; };
+		D7A3D1461E5F090B00EFD6BC /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3D1451E5F090B00EFD6BC /* HomeTableViewCell.m */; };
+		D7A3D1491E5F1F1800EFD6BC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3D1481E5F1F1800EFD6BC /* LoginViewController.m */; };
+		D7A3D14C1E5F1F4000EFD6BC /* InputTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3D14B1E5F1F4000EFD6BC /* InputTableViewCell.m */; };
+		D7A3D14F1E5F1F4D00EFD6BC /* ConfirmTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3D14E1E5F1F4D00EFD6BC /* ConfirmTableViewCell.m */; };
 		EDEE9A27569E0A4CA6E5C484 /* libPods-niersi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F3A3F36A83134F53DBB3F9 /* libPods-niersi.a */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +35,16 @@
 		D7A3D11A1E5B0C2200EFD6BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7A3D11D1E5B0C2200EFD6BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7A3D11F1E5B0C2200EFD6BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7A3D1411E5F007300EFD6BC /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		D7A3D1421E5F007300EFD6BC /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		D7A3D1441E5F090B00EFD6BC /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		D7A3D1451E5F090B00EFD6BC /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
+		D7A3D1471E5F1F1800EFD6BC /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		D7A3D1481E5F1F1800EFD6BC /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		D7A3D14A1E5F1F4000EFD6BC /* InputTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputTableViewCell.h; sourceTree = "<group>"; };
+		D7A3D14B1E5F1F4000EFD6BC /* InputTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputTableViewCell.m; sourceTree = "<group>"; };
+		D7A3D14D1E5F1F4D00EFD6BC /* ConfirmTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmTableViewCell.h; sourceTree = "<group>"; };
+		D7A3D14E1E5F1F4D00EFD6BC /* ConfirmTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +97,9 @@
 		D7A3D10D1E5B0C2100EFD6BC /* niersi */ = {
 			isa = PBXGroup;
 			children = (
+				D7A3D1401E5F004F00EFD6BC /* VC */,
+				D7A3D13F1E5F004000EFD6BC /* Model */,
+				D7A3D13E1E5F003900EFD6BC /* View */,
 				D7A3D1111E5B0C2100EFD6BC /* AppDelegate.h */,
 				D7A3D1121E5B0C2100EFD6BC /* AppDelegate.m */,
 				D7A3D1141E5B0C2100EFD6BC /* ViewController.h */,
@@ -101,6 +119,37 @@
 				D7A3D10F1E5B0C2100EFD6BC /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7A3D13E1E5F003900EFD6BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D7A3D1441E5F090B00EFD6BC /* HomeTableViewCell.h */,
+				D7A3D1451E5F090B00EFD6BC /* HomeTableViewCell.m */,
+				D7A3D14A1E5F1F4000EFD6BC /* InputTableViewCell.h */,
+				D7A3D14B1E5F1F4000EFD6BC /* InputTableViewCell.m */,
+				D7A3D14D1E5F1F4D00EFD6BC /* ConfirmTableViewCell.h */,
+				D7A3D14E1E5F1F4D00EFD6BC /* ConfirmTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7A3D13F1E5F004000EFD6BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7A3D1401E5F004F00EFD6BC /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				D7A3D1411E5F007300EFD6BC /* HomeViewController.h */,
+				D7A3D1421E5F007300EFD6BC /* HomeViewController.m */,
+				D7A3D1471E5F1F1800EFD6BC /* LoginViewController.h */,
+				D7A3D1481E5F1F1800EFD6BC /* LoginViewController.m */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +277,12 @@
 			files = (
 				D7A3D1161E5B0C2100EFD6BC /* ViewController.m in Sources */,
 				D7A3D1131E5B0C2100EFD6BC /* AppDelegate.m in Sources */,
+				D7A3D14F1E5F1F4D00EFD6BC /* ConfirmTableViewCell.m in Sources */,
+				D7A3D1491E5F1F1800EFD6BC /* LoginViewController.m in Sources */,
+				D7A3D1461E5F090B00EFD6BC /* HomeTableViewCell.m in Sources */,
 				D7A3D1101E5B0C2100EFD6BC /* main.m in Sources */,
+				D7A3D1431E5F007300EFD6BC /* HomeViewController.m in Sources */,
+				D7A3D14C1E5F1F4000EFD6BC /* InputTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +408,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vanney9.niersi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -367,6 +422,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vanney9.niersi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -389,6 +445,7 @@
 				D7A3D1241E5B0C2200EFD6BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
