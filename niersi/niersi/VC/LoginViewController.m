@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "InputTableViewCell.h"
+#import "EditHomeViewController.h"
 
 #define kInputCell @"InputCell"
 
@@ -61,6 +62,14 @@
     return 64.0f;
 }
 
+- (IBAction)backVC:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
+- (IBAction)login:(id)sender {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    EditHomeViewController *editVC = [sb instantiateViewControllerWithIdentifier:@"EditHomeVC"];
+    [self.navigationController pushViewController:editVC animated:YES];
+}
 
 @end

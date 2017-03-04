@@ -7,7 +7,8 @@
 //
 
 #import "HomeViewController.h"
-#import <Masonry.h>
+#import "LoginViewController.h"
+#import "CategoryHomeViewController.h"
 
 #import "HomeTableViewCell.h"
 
@@ -47,7 +48,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     HomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kHomeCell forIndexPath:indexPath];
-    cell.cellLabel.text = @"Niuuuuuuuuuuuuuuuuu";
+    cell.cellLabel.text = @"马桶";
     if (indexPath.row == 0) {
         cell.topLine.alpha = 0.0f;
     }
@@ -59,4 +60,29 @@
     return 64.0f;
 }
 
+/**
+ * @usage : 处理首页的点击table cell事件， 进入具体category的界面
+ * @param tableView
+ * @param indexPath
+ */
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    CategoryHomeViewController *categoryVC = [sb instantiateViewControllerWithIdentifier:@"CategoryHomeVC"];
+    [self.navigationController pushViewController:categoryVC animated:YES];
+}
+
+
+#pragma mark - other
+
+/**
+ * @usage : click setting into pwd controller VC
+ * @param sender
+ */
+- (IBAction)settingButtonClicked:(id)sender {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    LoginViewController *loginViewController = [sb instantiateViewControllerWithIdentifier:@"LoginVC"];
+    [self.navigationController pushViewController:loginViewController animated:YES];
+}
 @end
