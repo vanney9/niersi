@@ -12,6 +12,12 @@
 		D7670BFB1E6704E30014884D /* CategoryEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7670BFA1E6704E30014884D /* CategoryEditViewController.m */; };
 		D7670BFE1E6A690C0014884D /* DetailItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7670BFD1E6A690C0014884D /* DetailItemViewController.m */; };
 		D7670C011E6AA5140014884D /* DetailItemEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7670C001E6AA5140014884D /* DetailItemEditViewController.m */; };
+		D7670C051E6ABBEA0014884D /* DBBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D7670C041E6ABBEA0014884D /* DBBase.m */; };
+		D7670C081E6AE4E40014884D /* CategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D7670C071E6AE4E40014884D /* CategoryModel.m */; };
+		D7670C0B1E6AE4FF0014884D /* ItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D7670C0A1E6AE4FF0014884D /* ItemModel.m */; };
+		D7670C111E6AEC6D0014884D /* DBCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D7670C101E6AEC6D0014884D /* DBCategory.m */; };
+		D7670C141E6BE6CC0014884D /* DBItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D7670C131E6BE6CC0014884D /* DBItem.m */; };
+		D7670C171E6C0A250014884D /* InputView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7670C161E6C0A250014884D /* InputView.m */; };
 		D7A3D1101E5B0C2100EFD6BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3D10F1E5B0C2100EFD6BC /* main.m */; };
 		D7A3D1131E5B0C2100EFD6BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3D1121E5B0C2100EFD6BC /* AppDelegate.m */; };
 		D7A3D1161E5B0C2100EFD6BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3D1151E5B0C2100EFD6BC /* ViewController.m */; };
@@ -42,6 +48,18 @@
 		D7670BFD1E6A690C0014884D /* DetailItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailItemViewController.m; sourceTree = "<group>"; };
 		D7670BFF1E6AA5140014884D /* DetailItemEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailItemEditViewController.h; sourceTree = "<group>"; };
 		D7670C001E6AA5140014884D /* DetailItemEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailItemEditViewController.m; sourceTree = "<group>"; };
+		D7670C031E6ABBEA0014884D /* DBBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBBase.h; sourceTree = "<group>"; };
+		D7670C041E6ABBEA0014884D /* DBBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBBase.m; sourceTree = "<group>"; };
+		D7670C061E6AE4E40014884D /* CategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryModel.h; sourceTree = "<group>"; };
+		D7670C071E6AE4E40014884D /* CategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryModel.m; sourceTree = "<group>"; };
+		D7670C091E6AE4FF0014884D /* ItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemModel.h; sourceTree = "<group>"; };
+		D7670C0A1E6AE4FF0014884D /* ItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemModel.m; sourceTree = "<group>"; };
+		D7670C0F1E6AEC6D0014884D /* DBCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCategory.h; sourceTree = "<group>"; };
+		D7670C101E6AEC6D0014884D /* DBCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCategory.m; sourceTree = "<group>"; };
+		D7670C121E6BE6CC0014884D /* DBItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBItem.h; sourceTree = "<group>"; };
+		D7670C131E6BE6CC0014884D /* DBItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBItem.m; sourceTree = "<group>"; };
+		D7670C151E6C0A250014884D /* InputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputView.h; sourceTree = "<group>"; };
+		D7670C161E6C0A250014884D /* InputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputView.m; sourceTree = "<group>"; };
 		D7A3D10B1E5B0C2100EFD6BC /* niersi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = niersi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7A3D10F1E5B0C2100EFD6BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D7A3D1111E5B0C2100EFD6BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -100,6 +118,12 @@
 		D7670C021E6AB96A0014884D /* DB */ = {
 			isa = PBXGroup;
 			children = (
+				D7670C031E6ABBEA0014884D /* DBBase.h */,
+				D7670C041E6ABBEA0014884D /* DBBase.m */,
+				D7670C0F1E6AEC6D0014884D /* DBCategory.h */,
+				D7670C101E6AEC6D0014884D /* DBCategory.m */,
+				D7670C121E6BE6CC0014884D /* DBItem.h */,
+				D7670C131E6BE6CC0014884D /* DBItem.m */,
 			);
 			path = DB;
 			sourceTree = "<group>";
@@ -161,6 +185,8 @@
 				D7A3D14E1E5F1F4D00EFD6BC /* ConfirmTableViewCell.m */,
 				D7670BF61E66F5260014884D /* ItemCollectionViewCell.h */,
 				D7670BF71E66F5260014884D /* ItemCollectionViewCell.m */,
+				D7670C151E6C0A250014884D /* InputView.h */,
+				D7670C161E6C0A250014884D /* InputView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +194,10 @@
 		D7A3D13F1E5F004000EFD6BC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D7670C061E6AE4E40014884D /* CategoryModel.h */,
+				D7670C071E6AE4E40014884D /* CategoryModel.m */,
+				D7670C091E6AE4FF0014884D /* ItemModel.h */,
+				D7670C0A1E6AE4FF0014884D /* ItemModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -321,14 +351,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7670C0B1E6AE4FF0014884D /* ItemModel.m in Sources */,
 				D7A3D1161E5B0C2100EFD6BC /* ViewController.m in Sources */,
 				D7670BF81E66F5260014884D /* ItemCollectionViewCell.m in Sources */,
 				D7A3D1131E5B0C2100EFD6BC /* AppDelegate.m in Sources */,
+				D7670C141E6BE6CC0014884D /* DBItem.m in Sources */,
 				D7670BFB1E6704E30014884D /* CategoryEditViewController.m in Sources */,
+				D7670C051E6ABBEA0014884D /* DBBase.m in Sources */,
 				D7670BFE1E6A690C0014884D /* DetailItemViewController.m in Sources */,
 				D7A3D14F1E5F1F4D00EFD6BC /* ConfirmTableViewCell.m in Sources */,
+				D7670C171E6C0A250014884D /* InputView.m in Sources */,
 				D7A3D1491E5F1F1800EFD6BC /* LoginViewController.m in Sources */,
+				D7670C111E6AEC6D0014884D /* DBCategory.m in Sources */,
 				D7A3D1461E5F090B00EFD6BC /* HomeTableViewCell.m in Sources */,
+				D7670C081E6AE4E40014884D /* CategoryModel.m in Sources */,
 				D7A3D1101E5B0C2100EFD6BC /* main.m in Sources */,
 				D7A3D1431E5F007300EFD6BC /* HomeViewController.m in Sources */,
 				D7A3D14C1E5F1F4000EFD6BC /* InputTableViewCell.m in Sources */,

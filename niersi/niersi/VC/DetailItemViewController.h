@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ItemModel.h"
 
 typedef NS_ENUM(NSInteger, DetailItemVCType) {
     DetailItemVCTypeNotEdit = 0,
@@ -14,7 +15,6 @@ typedef NS_ENUM(NSInteger, DetailItemVCType) {
 };
 
 @interface DetailItemViewController : UIViewController
-
 @property (nonatomic, assign) DetailItemVCType type;
-
+@property (nonatomic, strong) ItemModel *item;
 @end

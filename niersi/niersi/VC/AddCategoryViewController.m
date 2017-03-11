@@ -8,11 +8,17 @@
 
 #import "AddCategoryViewController.h"
 #import <Masonry.h>
+#import "InputTableViewCell.h"
+
+#import "DBCategory.h"
+
+#define kCellIdentifier @"categoryItemCell"
 
 
-@interface AddCategoryViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface AddCategoryViewController () <UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *table;
-
+@property (nonatomic, strong) DBCategory *categoryManager;
+@property (nonatomic, strong) NSString *categoryName;
 @end
 
 @implementation AddCategoryViewController
@@ -21,6 +27,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     //NSLog(@"vanney code log : view did load");
+
+    _categoryManager = [DBCategory defaultManager];
+
     self.automaticallyAdjustsScrollViewInsets = NO;
     _table.delegate = self;
     _table.dataSource = self;
@@ -43,7 +52,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return 1;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -51,12 +60,10 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"test" forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor grayColor];
+    InputTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier forIndexPath:indexPath];
+    cell.textField.delegate = self;
     return cell;
 }
-
-
 
 
 #pragma mark - other
@@ -65,16 +72,45 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-//- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
-//    NSLog(@"vanney code log : will rotate");
-//    [self.table setNeedsUpdateConstraints];
-//}
-
 - (void)viewWillLayoutSubviews {
     //NSLog(@"vanney code log : width is %f", [UIScreen mainScreen].bounds.size.width);
     [_table mas_updateConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.view).offset([[UIScreen mainScreen] bounds].size.width / 6);
     }];
+}
+
+
+#pragma mark - UITextField About
+
+/*
+ * @usage : 点击背景 退出键盘
+ */
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
+    [super touchesBegan:touches withEvent:event];
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    _categoryName = textField.text;
+    NSLog(@"vanney code log : end edit cate is %@", _categoryName);
+}
+
+
+#pragma mark - click event
+
+- (IBAction)confirm:(id)sender {
+    if (_categoryName == nil) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"类型不能为空" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil];
+        [alertView show];
+        return;
+    }
+    
+    [self.categoryManager insertCategoryWithName:_categoryName];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)cancel:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

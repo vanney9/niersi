@@ -10,6 +10,9 @@
 #import "ItemCollectionViewCell.h"
 #import "DetailItemViewController.h"
 
+#import "DBItem.h"
+#import "ItemModel.h"
+
 
 #define kCellIdentifier @"ItemCollectionCell"
 #define kTopMargin 50.0f
@@ -19,7 +22,10 @@
 
 
 @interface CategoryHomeViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
-@property (weak, nonatomic) IBOutlet UICollectionView *collection;
+@property(weak, nonatomic) IBOutlet UICollectionView *collection;
+@property (nonatomic, strong) DBItem *itemManager;
+@property (nonatomic, strong) NSMutableArray *items;
+@property (nonatomic, strong) NSString *basePath;
 @end
 
 @implementation CategoryHomeViewController
@@ -27,6 +33,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _basePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+    _itemManager = [DBItem defaultManager];
+
+
     _collection.delegate = self;
     _collection.dataSource = self;
     self.automaticallyAdjustsScrollViewInsets = NO;
@@ -37,6 +47,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self pUpdateData];
+}
+
 
 #pragma mark - UICollectionView About
 
@@ -45,11 +59,16 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 12;
+    return _items.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     ItemCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCellIdentifier forIndexPath:indexPath];
+    ItemModel *curItem = [_items objectAtIndex:indexPath.row];
+    cell.itemLabel.text = curItem.name;
+    NSData *imageData = [NSData dataWithContentsOfFile:[NSString stringWithFormat:@"%@/%@", _basePath, curItem.image]];
+    cell.imageView.image = [UIImage imageWithData:imageData];
+    cell.imageView.contentMode = UIViewContentModeScaleAspectFit;
     cell.gakkiSelected = NO;
     return cell;
 }
@@ -70,6 +89,7 @@
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     DetailItemViewController *detailItemVC = [sb instantiateViewControllerWithIdentifier:@"DetailItemVC"];
     detailItemVC.type = DetailItemVCTypeNotEdit;
+    detailItemVC.item = [_items objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:detailItemVC animated:YES];
 }
 
@@ -82,6 +102,14 @@
  */
 - (IBAction)backVC:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+
+#pragma mark - Private Method
+
+- (void)pUpdateData {
+    _items = [_itemManager getAllItemsByCategoryID:_categoryID];
+    [_collection reloadData];
 }
 
 @end

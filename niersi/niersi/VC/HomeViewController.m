@@ -9,15 +9,17 @@
 #import "HomeViewController.h"
 #import "LoginViewController.h"
 #import "CategoryHomeViewController.h"
-
 #import "HomeTableViewCell.h"
+
+#import "DBCategory.h"
+#import "CategoryModel.h"
 
 #define kHomeCell @"HomeCell"
 
 @interface HomeViewController () <UITableViewDelegate, UITableViewDataSource>
-
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-
+@property (nonatomic, strong) DBCategory *categoryManager;
+@property (nonatomic, strong) NSMutableArray *categories;
 @end
 
 @implementation HomeViewController
@@ -25,9 +27,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _categoryManager = [DBCategory defaultManager];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self pUpdateData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,12 +50,13 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return _categories.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     HomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kHomeCell forIndexPath:indexPath];
-    cell.cellLabel.text = @"马桶";
+    CategoryModel *curCategory = [_categories objectAtIndex:indexPath.row];
+    cell.cellLabel.text = curCategory.name;
     if (indexPath.row == 0) {
         cell.topLine.alpha = 0.0f;
     }
@@ -70,6 +78,8 @@
 
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     CategoryHomeViewController *categoryVC = [sb instantiateViewControllerWithIdentifier:@"CategoryHomeVC"];
+    CategoryModel *curCategory = [_categories objectAtIndex:indexPath.row];
+    categoryVC.categoryID = curCategory.id;
     [self.navigationController pushViewController:categoryVC animated:YES];
 }
 
@@ -85,4 +95,13 @@
     LoginViewController *loginViewController = [sb instantiateViewControllerWithIdentifier:@"LoginVC"];
     [self.navigationController pushViewController:loginViewController animated:YES];
 }
+
+
+#pragma mark - Private Method
+
+- (void)pUpdateData {
+    _categories = [_categoryManager getAllCategories];
+    [_tableView reloadData];
+}
+
 @end

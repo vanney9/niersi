@@ -10,4 +10,6 @@
 
 @interface CategoryEditViewController : UIViewController
 
+@property (nonatomic, assign) int categoryID;
+
 @end

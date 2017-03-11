@@ -10,4 +10,6 @@
 
 @interface DetailItemEditViewController : UIViewController
 
+@property (nonatomic, assign) int categoryID;
+
 @end

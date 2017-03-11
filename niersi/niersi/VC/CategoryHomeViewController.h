@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface CategoryHomeViewController : UIViewController
-
+@property (nonatomic, assign) int categoryID;
 @end
